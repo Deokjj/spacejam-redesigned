@@ -8,7 +8,6 @@
 .Players{
   height: 110vh;
   width: 120vw;
-  /* transform: rotate(2deg) translate(-10vw,-5vh); */
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;

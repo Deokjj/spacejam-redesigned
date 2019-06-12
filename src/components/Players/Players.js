@@ -65,7 +65,7 @@ class Player extends React.Component{
         <img src={src} alt={name} />
         <this.Overlay 
           className="overlay"
-          pose={this.state.status ? "hovered" : "idle"}>
+          pose={this.state.status}>
           <p className="playerName">{name}</p>
           <this.Status pose={this.state.status}>
             <Stat className="stat"/>
@@ -84,7 +84,7 @@ class Players extends React.Component{
     };
   }
   
-  Player = posed.div({
+  Players = posed.div({
     none: { 
       transform: 'rotate(2deg) translate(-10vw,-5vh)'
     },
@@ -113,7 +113,7 @@ class Players extends React.Component{
       <div className="PlayersWrapper">
         <span className="goback"
         onClick={() => this.props.setPage('Splash')}> Return </span>
-        <this.Player className="Players"
+        <this.Players className="Players"
         pose={this.state.hovering}
         onMouseLeave={() => this.setState({hovering: 'none'})}>
           <Player src={playerImgs.mike} name="Michael Jordan" Stat={MikeStat}
@@ -128,7 +128,7 @@ class Players extends React.Component{
             onMouseEnter={() => this.setState({hovering: 'muggsy'})}/>
           <Player src={playerImgs.shawn} name="Shawn Bradley" Stat={ShawnStat}
             onMouseEnter={() => this.setState({hovering: 'shawn'})}/>
-        </this.Player>
+        </this.Players>
       </div>
     );
   }
