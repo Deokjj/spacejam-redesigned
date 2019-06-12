@@ -1,0 +1,156 @@
+
+.SplashWrapper {
+  background: radial-gradient(#060613, #040415);
+  width: 100vw;
+  height: 100vh;
+}
+
+.Particles{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* SPLASH */
+.Splash{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+.sideBtn{
+  position: absolute;
+  height: calc(100vh + 6px);
+  width: 200px;
+  top: -3px;
+  background-color: #F5F5F5;
+  cursor: pointer;
+  transition: all .2s ease-out 0s;
+}
+
+.sideBtn > span{
+  writing-mode: vertical-rl;
+  margin: 0;
+  position: absolute;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #040415;
+  transition: all .2s ease-out 0s;
+}
+
+.leftBtn{
+  transform: rotate(-2deg);
+  left: -90px;
+}
+
+.leftBtn:hover {
+  background-color: #E8FF00;
+  box-shadow: 17px 0 0 #A2C673;
+  transform: translateX(3rem) rotate(-2deg); 
+}
+
+.leftBtn > span{
+  top: 48px;
+}
+
+.leftBtn:hover > span{
+  color: #00718A;
+}
+
+.leftBtn > .bunny{
+  height: 160px;
+  position: absolute;
+  bottom: 16px;
+  right: -85px;
+  transform: rotate(2deg);
+}
+
+.rightBtn{
+  transform: rotate(2deg);
+  right: -90px;
+}
+
+.rightBtn:hover {
+  background-color: #E8FF00;
+  box-shadow: -17px 0 0 #A2C673;
+  transform: translateX(-3rem) rotate(2deg); 
+}
+
+.rightBtn > span{
+  left: 0;
+  bottom: 80px;
+  transform: rotate(180deg);
+}
+
+.rightBtn:hover > span{
+  color: #00718A;
+}
+
+.rightBtn > .mike{
+  height: 400px;
+  position: absolute;
+  top: 0px;
+  left: -74px;
+  transform: rotate(-2deg);
+}
+
+.centerContent{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerContent > .centerLogo{
+    width: 50%;
+    margin: 30px 0 20px;
+}
+
+.centerContent > .centerLogo > img{
+  width: 100%
+}
+
+.centerContent > .watchTrailer{
+  color: #F0E8E1;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 2px 6px;
+  transition: all .1s ease-out 0s;
+}
+
+.centerContent > .watchTrailer:hover{
+  background-color: #E8FF00;
+  color: #00718A;
+  border-radius: 2px;
+}
+
+.centerContent > .footerMenu{
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  color: #E7E1DF;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.centerContent > .footerMenu > span{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.centerContent > .trademarks{
+  margin-top: 10px;
+  font-size: 10px;
+  color: #E7E1DF;
+  font-weight: 300;
+}
